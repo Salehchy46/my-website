@@ -1,0 +1,29 @@
+* {
+  margin: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logo {
+  height: 20px;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  color: #4b4b4b;
+  background: #000;
+  margin-top: 15px;
+}
+
+.nav {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav:hover {
+  color: #000;
+  background: white;
+  position: static;
+  box-shadow: 5px 5px #000000, 5px 5px #ffffff, 5px 5px #000000;
+}
