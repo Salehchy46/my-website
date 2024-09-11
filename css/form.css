@@ -27,3 +27,21 @@
   position: static;
   box-shadow: 5px 5px #000000, 5px 5px #ffffff, 5px 5px #000000;
 }
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  border: 2px solid #000;
+}
+
+.form-container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/OIP.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
