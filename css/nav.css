@@ -4,12 +4,17 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+body {
+  height: 100%;
+  min-height: 100%;
+}
+
 /*Navigation bar*/
 header {
   background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../images/OIP.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0px;
+  margin: 0;
 }
 
 .logo {
@@ -23,6 +28,7 @@ header {
   color: #4b4b4b;
   background: #000;
   margin-top: 15px;
+  flex-wrap: wrap;
 }
 
 .nav {
@@ -37,47 +43,55 @@ header {
   box-shadow: 5px 5px #000000, 5px 5px #ffffff, 5px 5px #000000;
 }
 
-/*Main section*/
+@media screen and (max-width: 576px) {
+  .container{
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-.introduction {
-  display: flex;
+  .title {
+    font-size: 20px;
+  }
+
+  .more {
+    font-size: 10px;
+  }
+
+  .introduction {
+    flex-direction: column;
+  }
+
+  .profile{
+    position: static;
+    height: 200px;
+    width: 200px;
+  }
+
+  header {
+    background-size: contain;
+    background-repeat: repeat-y;
+  }
 }
 
-.it-is-title {
-  align-items: center;
-  padding: 50px;
-}
+@media screen and (min-width: 576px) and (max-width: 922px) {
+  .container{
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-.title {
-  font-size: 60px;
-  text-align: center;
-}
+  .title {
+    font-size: 30px;
+  }
 
-.more {
-  font-size: 20px;
-}
+  .more{
+    font-size: 20px;
+  }
 
-.profile {
-  padding: 30px 30px 0 130px;
-  width: 400px;
-  align-items: center;
-  bottom: 0;
-  right: 10px;
-}
+  .introduction {
+    flex-direction: column;
+  }
 
-.connection {
-  text-decoration: none;
-  color: #000;
-}
-
-.connection:hover {
-  color: rgb(255, 5, 5);
-}
-
-/*The main section*/
-
-.main-sec {
-  height: 500px;
-  background: #000;
-  max-height: 1000px;
+  .profile  {
+    position: static;
+    height: 400px;
+    width: 400px;
+  }
 }

@@ -1,0 +1,83 @@
+/*Universal selectors*/
+* {
+  margin: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+}
+
+/*Main section*/
+
+header {
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../images/OIP.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+.logo {
+  height: 20px;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  color: #4b4b4b;
+  background: #000;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+
+.introduction {
+  display: flex;
+}
+
+.it-is-title {
+  align-items: center;
+  padding: 50px;
+  position: static;
+  width: 70%;
+}
+
+.title {
+  font-size: 40px;
+  text-align: center;
+}
+
+.more {
+  font-size: 30px;
+}
+
+.profile {
+  padding: 40px 40px 0 140px;
+  width: 400px;
+  height: 400px;
+  align-items: center;
+  bottom: 50px;
+  right: 10px;
+  position: sticky;
+  border-radius: 50% ;
+}
+
+.connection {
+  text-decoration: none;
+  color: #000;
+}
+
+.connection:hover {
+  color: rgb(255, 5, 5);
+}
+
+
+/*The main section*/
+
+.main-sec {
+  height: 500px;
+  background: #000;
+  max-height: 1000px;
+}
